@@ -14,5 +14,10 @@ setup(
     packages=["pwncollege_client"],
     url="https://github.com/pwn-college/client",
     description="Client for pwn.college CTFs",
-    author="Connor Nelson"
+    author="Connor Nelson",
+    python_requires='>=3.6',
+    install_requires=[
+        'pwntools @ git+https://github.com/Gallopsled/pwntools@dev3',
+        'requests'
+    ]
 )
